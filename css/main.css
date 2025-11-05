@@ -1,0 +1,310 @@
+/* Reset de estilos */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos de navbar */
+
+.custom-green {
+    background-color: lightgreen
+}
+
+/* Estilos del index: main */
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.principal .imagen-principal img,
+.principal .video iframe {
+    width: 80%;
+    height: 80%;
+    margin: 1rem;
+}
+
+.principal .imagen-principal .informacion {
+    text-align: left;
+
+}
+
+.principal .imagen-principal .informacion h1,
+h3,
+p {
+    padding: 0.6rem;
+    text-align: left;
+}
+
+.principal .imagen-principal h1 span {
+    text-decoration: underline;
+}
+
+/* Estilos de galeria: main */
+
+.galeria h1 {
+    text-align: center;
+}
+
+.galeria {
+    background-color: grey;
+}
+
+.galeria .cont_img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 9px black;
+    object-fit: cover;
+}
+
+.galeria .cont_img {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 2fr);
+    gap: 1rem;
+    padding: 1.3rem;
+    justify-content: center;
+}
+
+/* Estilos de ubicacion: main */
+
+.ubi {
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.ubi .info iframe {
+    width: 100%;
+    height: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.ubi h1 {
+    font-weight: bolder;
+    font-size: 1.9rem;
+}
+
+.ubi h1 span {
+    text-decoration: underline;
+}
+
+main .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-start;
+}
+
+.ubi .datos {
+    align-self: flex-start;
+    font-size: 1rem;
+    padding-bottom: 0.8rem;
+    text-align: left;
+}
+
+.ubi .datos p {
+    align-self: flex-start;
+    font-size: 1rem;
+    padding-bottom: 0.8rem;
+    text-align: left;
+}
+
+.ubi .datos p span {
+    font-weight: bolder;
+}
+
+.ubi .actividades h2 {
+    font-size: 1.7rem;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.ubi .actividades p {
+    text-align: left;
+    padding-bottom: 0.8rem;
+}
+
+.ubi h2 .mq-tablet {
+    text-decoration: underline;
+}
+
+/* Estilos de ubicacion: section */
+
+section {
+    background-color: lightslategray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+section img {
+    width: 100%;
+    height: 100%;
+}
+
+section h2 {
+    align-self: flex-start;
+    font-size: 1.7rem;
+    padding-bottom: 10px;
+}
+
+section p {
+    align-self: flex-start;
+    font-size: 1rem;
+    padding-bottom: 0.8rem;
+    text-align: left;
+}
+
+section p span {
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+section h2 span {
+    text-decoration: underline;
+}
+
+/* Estilos de footer general */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(40, 40, 40);
+
+}
+
+footer .redes {
+    list-style: none;
+
+}
+
+footer a img {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* Media Queries: Tablet */
+
+@media screen and (min-width: 768px) {
+
+    /* MQ de index: main */
+    .principal {
+        background-color: lightslategray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .principal .imagen-principal {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        width: 80%;
+    }
+
+    .principal .imagen-principal img {
+        width: 40%;
+    }
+
+    .principal .video {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1.8rem;
+    }
+
+    .principal .video iframe {
+        width: 400px;
+        height: 400px;
+    }
+
+    /* MQ de galeria: main */
+
+    .galeria .cont_img {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    /* MQ de ubicacion: main */
+
+    .ubi .info {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        gap: 2rem;
+        width: 80%;
+    }
+
+    .ubi .info .datos {
+        padding-top: 0.9rem;
+    }
+
+    .ubi .actividades {
+        width: 80%;
+    }
+
+    .ubi h2 .mq-tablet {
+        text-decoration: none;
+    }
+
+    .ubi h2 span {
+        text-decoration: underline;
+    }
+
+    /* MQ de ubicacion: section */
+
+    section .preguntas {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        gap: 1rem;
+        width: 80%;
+    }
+
+    section .preguntas img {
+        width: 300px;
+        height: 450px;
+    }
+
+    /* MQ_Footer_general */
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+}
+
+/* Media Queries: Desktop */
+
+@media screen and (min-width: 1200px) {
+
+    /* MQ de galeria: main */
+    .galeria .cont_img {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+}
