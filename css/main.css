@@ -12,9 +12,16 @@
     background-color: lightgreen
 }
 
+/* Estilos generales */
+
+body {
+    font-family: 'Times New Roman', Times, serif;  
+}
+
+
 /* Estilos del index: main */
 
-.principal {
+.principal { 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,6 +48,14 @@ p {
     text-align: left;
 }
 
+.principal .imagen-principal .informacion p {
+    font-size: 1.2rem;
+}
+
+.principal .imagen-principal .informacion h3 {
+    font-style: italic;
+}
+
 .principal .imagen-principal h1 span {
     text-decoration: underline;
 }
@@ -52,7 +67,7 @@ p {
 }
 
 .galeria {
-    background-color: grey;
+    padding: 1rem;
 }
 
 .galeria .cont_img img {
@@ -75,7 +90,6 @@ p {
 /* Estilos de ubicacion: main */
 
 .ubi {
-    background-color: gray;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -129,11 +143,13 @@ main .info {
     font-size: 1.7rem;
     text-align: left;
     padding-bottom: 10px;
+    font-style: italic;
 }
 
 .ubi .actividades p {
     text-align: left;
     padding-bottom: 0.8rem;
+    font-size: 1.2rem;
 }
 
 .ubi h2 .mq-tablet {
@@ -179,6 +195,11 @@ section h2 span {
     text-decoration: underline;
 }
 
+section h3 {
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
 /* Estilos de footer general */
 
 footer {
@@ -188,7 +209,7 @@ footer {
     align-items: center;
     text-align: center;
     background-color: rgb(40, 40, 40);
-
+    color: whitesmoke;
 }
 
 footer .redes {
@@ -207,7 +228,6 @@ footer a img {
 
     /* MQ de index: main */
     .principal {
-        background-color: lightslategray;
         display: flex;
         justify-content: center;
         align-items: center;
